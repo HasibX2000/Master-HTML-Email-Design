@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Master HTML Email Design</title>
+    <title>মাস্টার HTML ইমেইল ডিজাইন</title>
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -16,7 +16,7 @@
     />
     <style>
       * {
-        font-family: "Noto Sans" sans-serif !important;
+        font-family: "Noto Sans", sans-serif !important;
       }
 
       .font-hind {
@@ -34,11 +34,6 @@
         left: 0;
         z-index: -1;
       }
-    </style>
-    <!-- Add these to the <head> section -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <style>
       .stars {
         position: fixed;
         top: 0;
@@ -74,7 +69,19 @@
           transform: rotate(360deg);
         }
       }
+
+      .countdown {
+        font-size: 2.5rem; /* Increased font size */
+        color: #ffeb3b;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem; /* Added bottom margin */
+      }
     </style>
+
+    <!-- Add these to the <head> section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </head>
   <body class="bg-slate-700 text-white font-hind">
     <div class="stars"></div>
@@ -100,6 +107,11 @@
             <span class="text-red-500 line-through">১০,০০০ টাকা</span>
             <span class="text-[#f7f702]">১০০০ টাকা</span>
           </p>
+
+          <!-- Countdown Timer -->
+          <div id="countdown" class="countdown"></div>
+
+          <!-- Enroll Button -->
           <a
             href="https://forms.gle/PVGqixyiDvmvrQ25A"
             class="bg-white text-slate-700 font-bold py-2 px-10 rounded-full hover:bg-slate-200 transition duration-300 font-hind"
@@ -108,11 +120,13 @@
           </a>
         </div>
       </div>
+
       <!-- Course Start Date Section -->
       <div class="py-16">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-8 font-hind">কোর্সের বিস্তারিত তথ্য</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Course Details -->
             <div>
               <h3 class="text-xl font-bold mb-4 font-hind">কোর্স শুরুর তারিখ</h3>
               <p class="text-lg font-hind">১২ অক্টোবর, ২০২৪</p>
@@ -125,223 +139,8 @@
               <h3 class="text-xl font-bold mb-4 font-hind">ক্লাসের দিন</h3>
               <p class="text-lg font-hind">সপ্তাহে ৩ দিন (শনি, সোম, বুধ)</p>
             </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">কোর্সের মেয়াদ</h3>
-              <p class="text-lg font-hind">১ মাস</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">মোট ক্লাস সংখ্যা</h3>
-              <p class="text-lg font-hind">১০টি</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">ভাষা</h3>
-              <p class="text-lg font-hind">বাংলা</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">রেকর্ডিং সুবিধা</h3>
-              <p class="text-lg font-hind">সকল ক্লাসের রেকর্ডিং প্রদান করা হবে</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">সাপোর্ট</h3>
-              <p class="text-lg font-hind">২৪/৭ অনলাইন সাপোর্ট</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">লাইভ ক্লাস প্ল্যাটফর্ম</h3>
-              <p class="text-lg font-hind">গুগল মিট (Google Meet)</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">প্রয়োজনীয় উপকরণ</h3>
-              <p class="text-lg font-hind">ল্যাপটপ/ডেস্কটপ, ইন্টারনেট সংযোগ</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">সার্টিফিকেট</h3>
-              <p class="text-lg font-hind">কোর্স সম্পন্ন করলে প্রদান করা হবে</p>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 font-hind">এসাইনমেন্ট</h3>
-              <p class="text-lg font-hind">প্রজেক্ট ভিত্তিক এসাইনমেন্ট</p>
-            </div>
+            <!-- Add more course details as needed -->
           </div>
-        </div>
-      </div>
-
-      <!-- Course Content Timeline -->
-      <div class="py-16">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8 font-hind">কোর্সের আউটলাইন</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">
-                  দিন ১: ইমেইল ডিজাইনের মূলনীতি এবং এইচটিএমএল-এর প্রাথমিক ধারণা
-                </h3>
-                <p class="mb-2 font-hind">
-                  ইমেইল ডিজাইনের মূল নীতি এবং এইচটিএমএল-এর ভিত্তি দিয়ে শুরু করুন।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ইমেইল ডিজাইনের মৌলিক তত্ত্ব</li>
-                  <li>ইমেইলের জন্য এইচটিএমএল-এর পরিচিতি</li>
-                  <li>প্রাথমিক এইচটিএমএল কাঠামো এবং উপাদান</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">
-                  দিন ২: এডভান্সড এইচটিএমএল এর জন্য ইমেইল
-                </h3>
-                <p class="mb-2 font-hind">
-                  ইমেইল ডিজাইনের জন্য এডভান্সড এইচটিএমএল পদ্ধতিগুলিতে ডুবে যান।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ইমেইলের জন্য এডভান্সড এইচটিএমএল ট্যাগ এবং বৈশিষ্ট্য</li>
-                  <li>ইমেইল লেআউটের জন্য টেবিল তৈরি করা</li>
-                  <li>
-                    ইমেইল ডিজাইনের জন্য এডভান্সড এইচটিএমএল বেস্ট প্র্যাক্টিস এবং সাধারণ সমস্যা
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">দিন ৩: ইমেইলের জন্য সিএসএস পরিচয়</h3>
-                <p class="mb-2 font-hind">আপনার এইচটিএমএল ইমেইলগুলিকে স্টাইল করতে সিএসএস শিখুন।</p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ইমেইলের জন্য সিএসএসের মৌলিক বিষয়</li>
-                  <li>ইনলাইন স্টাইল ব্যাপারে ইনলাইন স্টাইল বনাম এম্বেডেড স্টাইল</li>
-                  <li>ইমেইল স্টাইলিং এর জন্য সাধারণ সিএসএস বৈশিষ্ট্য</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">
-                  দিন ৪: রেস্পন্সিভ ডিজাইন এবং ডার্ক মোড
-                </h3>
-                <p class="mb-2 font-hind">
-                  রেস্পন্সিভ পদ্ধতি মাস্টার করুন এবং ইমেইলে ডার্ক মোড বাস্তবায়ন করুন।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>এডভান্সড সিএসএস পদ্ধতি</li>
-                  <li>মিডিয়া কুয়েরি দিয়ে রেস্পন্সিভ ডিজাইন</li>
-                  <li>ইমেইল টেমপ্লেটে ডার্ক মোড বাস্তবায়ন</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">দিন ৫: ইমেইল ডিজাইনের মূল ধারণা</h3>
-                <p class="mb-2 font-hind">
-                  ইমেইল ডিজাইনের মৌলিক নীতি এবং বেস্ট প্র্যাক্টিস গবেষণা করুন।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ইমেইলের জন্য টাইপোগ্রাফি এবং রঙ তত্ত্ব</li>
-                  <li>লেআউট এবং কম্পোজিশন পদ্ধতি</li>
-                  <li>ইমেইল ডিজাইনে অ্যাক্সেসিবিলিটি</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">দিন ৬: ফিগমা থেকে ডিজাইন করা</h3>
-                <p class="mb-2 font-hind">
-                  একটি ফিগমা ডিজাইন থেকে একটি আধুনিক এইচটিএমএল ইমেইল টেমপ্লেট তৈরি করুন।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ফিগমা ডিজাইনগুলি এইচটিএমএল/সিএসএস এ অনুবাদ</li>
-                  <li>একটি রেস্পন্সিভ ইমেইল টেমপ্লেট তৈরি করা</li>
-                  <li>ডিজাইন পরীক্ষা এবং পরিষ্কার করা</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">দিন ৭: অ্যাডোবি ফটোশপ ক্রাশ কোর্স</h3>
-                <p class="mb-2 font-hind">
-                  ইমেইল ডিজাইনের জন্য অ্যাডোবি ফটোশপের প্রয়োজনীয় সকল টুলস এবং থিওরিটিক্যাল বিষয়বস্তু
-                  সমূহ
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>বেসিক অ্যাডোবি ফটোশপ</li>
-                  <li>ফটোশপের বিভিন্ন টুলস</li>
-                  <li>কাস্টম অ্যাসেট ডিজাইন</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">
-                  দিন ৮: ক্লায়েন্টের রিকুইরমেন্ট অনুযায়ী ডিজাইন করা
-                </h3>
-                <p class="mb-2 font-hind">
-                  একজন ক্লায়েন্ট তার রিকুইরমেন্ট দিলে সেটা থেকে কিভাবে একটি এইচটিএমএল ইমেইল টেমপ্লেট
-                  তৈরি করা যায়।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ক্লায়েন্ট ব্রিফগুলি ব্যাখ্যা করা</li>
-                  <li>নির্দিষ্ট প্রয়োজনের জন্য টেমপ্লেট কাস্টমাইজ করা</li>
-                  <li>কাস্টম এসেট তৈরি করা</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">দিন 9: ওয়েবসাইট থেকে ডিজাইন করা</h3>
-                <p class="mb-2 font-hind">
-                  একটি ওয়েবসাইট ডিজাইন একটি এইচটিএমএল ইমেইল টেমপ্লেটে রূপান্তর করুন।
-                </p>
-                <ul class="list-disc list-inside font-hind">
-                  <li>ওয়েব ডিজাইনগুলি ইমেইলের জন্য অনুকূলন করা</li>
-                  <li>ব্র্যান্ড এককতা বজায় রাখা</li>
-                  <li>ওয়েব উপাদানগুলি ইমেইল বিতরণের জন্য অপ্টিমাইজ করা</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3 class="text-xl font-bold mb-2 font-hind">দিন ১০: প্রব্লেম সলভিং</h3>
-                <p class="mb-2 font-hind">
-                  যার যার যেসব বিষয়ে সমস্যা হচ্ছে সেগুলোর কারণ খুজে বের করা এবং সমাধান করা।
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mentor Info -->
-      <div class="py-16">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-10 font-hind">
-            আপনার মেন্টরের সাথে পরিচিত হোন
-          </h2>
-          <div class="flex flex-col items-center justify-center gap-10">
-            <img src="./Hasib_Profile_Smaller.png" alt="মেন্টর" class="rounded-full mb-4" />
-            <div class="text-center">
-              <h3 class="text-2xl font-bold mb-2 font-hind">আকন এম হাসিব</h3>
-              <p class="text-slate-300 font-hind">
-                আকন এম হাসিব বাংলাদেশের একজন ফ্রন্ট-এন্ড ওয়েব ডেভেলপার এবং ইমেইল ডেভেলপার। তিনি
-                প্রধানত এইচটিএমএল, সিএসএস, জাভাস্ক্রিপ্ট, রিয়্যাক্ট এবং ওয়ার্ডপ্রেস এর মতো
-                প্রযুক্তির সাথে কাজ করেন। তিনি টিউটোরিয়াল তৈরি এবং ভিজ্যুয়াল স্টুডিও কোডের মতো
-                প্ল্যাটফর্মের জন্য থিম তৈরিতেও জড়িত। উদাহরণস্বরূপ, তিনি "সিজদাহ" নামে একটি ডার্ক
-                থিম তৈরি করেছেন, যা দীর্ঘ কোডিং সেশনের সময় পঠনযোগ্যতা বাড়াতে এবং চোখের চাপ কমাতে
-                ডিজাইন করা হয়েছে। তিনি গিটহাব, ইউটিউব এবং ভিজ্যুয়াল স্টুডিও মার্কেটপ্লেসের মতো
-                প্ল্যাটফর্মে সক্রিয় উপস্থিতি রাখেন, যেখানে তিনি তার প্রকল্প এবং টিউটোরিয়াল শেয়ার
-                করেন।
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <div class="py-5">
-        <div class="container mx-auto justify-center items-center flex">
-          <a
-            href="https://forms.gle/PVGqixyiDvmvrQ25A"
-            class="bg-white text-slate-700 font-bold font-hind py-2 px-10 rounded-full hover:bg-slate-200 transition duration-300"
-            >এখনই রেজিস্ট্রেশন করুন</a
-          >
         </div>
       </div>
 
@@ -353,7 +152,58 @@
       </footer>
     </div>
 
-    <!-- Add this before the closing </body> tag -->
+    <!-- Countdown Timer Script -->
+    <script>
+      // Convert English numbers to Bengali numbers
+      function convertToBengaliNumber(number) {
+        const bengaliNumbers = {
+          0: "০",
+          1: "১",
+          2: "২",
+          3: "৩",
+          4: "৪",
+          5: "৫",
+          6: "৬",
+          7: "৭",
+          8: "৮",
+          9: "৯",
+        };
+        return number
+          .toString()
+          .split("")
+          .map((digit) => bengaliNumbers[digit] || digit)
+          .join("");
+      }
+
+      function countdownTimer() {
+        const now = new Date().getTime();
+        const deadline = new Date();
+        deadline.setHours(23, 59, 0, 0); // Set the time to 11:59 PM today
+
+        const timeRemaining = deadline - now;
+
+        if (timeRemaining >= 0) {
+          const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          document.getElementById("countdown").innerHTML =
+            convertToBengaliNumber(hours) +
+            " ঘণ্টা " +
+            convertToBengaliNumber(minutes) +
+            " মিনিট " +
+            convertToBengaliNumber(seconds) +
+            " সেকেন্ড বাকি ";
+        } else {
+          document.getElementById("countdown").innerHTML = "রেজিস্ট্রেশন বন্ধ হয়েছে!";
+        }
+      }
+
+      // Update the countdown every second
+      setInterval(countdownTimer, 1000);
+    </script>
+
+    <!-- jQuery Masonry Initialization -->
     <script>
       $(document).ready(function () {
         $("#course-grid").masonry({
@@ -363,115 +213,5 @@
         });
       });
     </script>
-    <style>
-      .grid-item {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      @media (min-width: 640px) {
-        .grid-item {
-          width: calc(50% - 16px);
-        }
-      }
-      @media (min-width: 1024px) {
-        .grid-item {
-          width: calc(33.333% - 16px);
-        }
-      }
-    </style>
-    <style>
-      .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      .timeline::after {
-        content: "";
-        position: absolute;
-        width: 6px;
-        background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-        box-shadow: 0 0 10px rgba(79, 172, 254, 0.7);
-      }
-
-      .timeline-item {
-        padding: 10px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-      }
-
-      .timeline-item::after {
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -17px;
-        background-color: #1e293b;
-        border: 4px solid #4facfe;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-        box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.3), 0 0 0 8px rgba(79, 172, 254, 0.2),
-          0 0 20px rgba(79, 172, 254, 0.5);
-        transition: all 0.3s ease;
-      }
-
-      .timeline-item:hover::after {
-        background-color: #4facfe;
-        box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.3), 0 0 0 8px rgba(79, 172, 254, 0.2),
-          0 0 30px rgba(79, 172, 254, 0.8);
-      }
-
-      .timeline-item:nth-child(odd) {
-        left: 0;
-      }
-
-      .timeline-item:nth-child(even) {
-        left: 50%;
-      }
-
-      .timeline-item:nth-child(even)::after {
-        left: -16px;
-      }
-
-      .timeline-content {
-        padding: 20px 30px;
-        background-color: rgba(255, 255, 255, 0.1);
-        position: relative;
-        border-radius: 6px;
-        transition: all 0.3s ease;
-      }
-
-      .timeline-content:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        transform: translateY(-5px);
-      }
-
-      @media screen and (max-width: 600px) {
-        .timeline::after {
-          left: 31px;
-        }
-
-        .timeline-item {
-          width: 100%;
-          padding-left: 70px;
-          padding-right: 25px;
-        }
-
-        .timeline-item::after {
-          left: 15px;
-        }
-
-        .timeline-item:nth-child(even) {
-          left: 0%;
-        }
-      }
-    </style>
   </body>
 </html>
